@@ -1,0 +1,1723 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: 0.5s ease;
+}
+
+html {
+    font-size: 6px;
+    overflow-x: hidden;
+}
+
+/* Scroll ayarlar başlangıç */
+html::-webkit-scrollbar {
+    width: 2rem;
+    background-color: #ffffff;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 0rem;
+    background-color: #745b37;
+
+}
+
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Scroll ayarlar bitiş */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #ffffff;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+
+
+
+/* header Başlangıç */
+
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+.header-logo img {
+    display: block;
+    float: left;
+    height: 100%;
+    width: 25rem;
+    object-fit: cover;
+    margin-left: 2rem;
+}
+
+/* Logo responsive */
+@media (min-width: 800px) {
+    .header-logo img {
+        display: block;
+        float: left;
+        height: 100%;
+        width: 28rem;
+        object-fit: cover;
+        margin-left: 2rem;
+    }
+}
+
+@media (min-height:1300px) {
+    .header-logo img {
+        display: block;
+        float: left;
+        height: 100%;
+        width: 28rem;
+        object-fit: cover;
+        margin-left: 4rem;
+    }
+}
+
+/* Logo responsive */
+
+
+.header .navbar {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    z-index: 100;
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+
+
+
+
+
+.header-menu ul {
+    margin-bottom: 2px;
+    margin-right: 50px;
+}
+
+#menuItems li {
+    display: inline-block;
+}
+
+#menuItems li a {
+    margin: 20px;
+    color: #fff;
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+}
+
+
+#menuItems li a:hover {
+    color: #ce6611;
+}
+
+@media (max-width: 800px) {
+    #menuItems li a {
+        display: none;
+    }
+}
+
+
+
+
+
+/* Hamburger Buton Başlangıç */
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(117, 76, 37, 0.7);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #ce6611;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    font-size: 40px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {
+        overflow-y: auto;
+    }
+
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+@media screen and (min-width: 800px) {
+    .acik {
+        display: none;
+    }
+}
+
+.acik {
+    color: #fff;
+    float: right;
+    margin-right: -25px;
+}
+
+
+
+
+/* Hamburger Buton  Bitiş */
+
+/* header Bitiş */
+
+
+
+
+/* Section home */
+
+.home {
+    min-height: 104vh;
+    background: url(images/coffee2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.home .ana-text {
+    position: absolute;
+    display: flex;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.home .ana-text h1 {
+    font-size: 22rem;
+    color: #fff;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    letter-spacing: 1px;
+}
+
+
+
+/* Ana text responsive  başlangıç */
+
+@media (min-width:320px) {
+    .home .ana-text h1 {
+        font-size: 22rem;
+        color: #fff;
+        font-family: 'Herr Von Muellerhoff', cursive;
+        letter-spacing: 1px;
+    }
+}
+
+@media (min-width:576px) {
+    .home .ana-text h1 {
+        font-size: 24rem;
+        color: #fff;
+        font-family: 'Herr Von Muellerhoff', cursive;
+        letter-spacing: 1px;
+    }
+}
+
+@media (min-width:768px) {
+    .home .ana-text h1 {
+        font-size: 26rem;
+        color: #fff;
+        font-family: 'Herr Von Muellerhoff', cursive;
+        letter-spacing: 1px;
+    }
+}
+
+@media (min-width:992px) {
+    .home .ana-text h1 {
+        font-size: 28rem;
+        color: #fff;
+        font-family: 'Herr Von Muellerhoff', cursive;
+        letter-spacing: 1px;
+    }
+}
+
+@media (min-width:1200px) {
+    .home .ana-text h1 {
+        font-size: 30rem;
+        color: #fff;
+        font-family: 'Herr Von Muellerhoff', cursive;
+        letter-spacing: 1px;
+    }
+}
+
+
+@media (min-width:1400px) {
+    .home .ana-text h1 {
+        font-size: 30rem;
+        color: #fff;
+        font-family: 'Herr Von Muellerhoff', cursive;
+        letter-spacing: 1px;
+    }
+}
+
+/* Ana text responsive  bitiş */
+
+
+.btn-2 {
+    margin-top: 4rem;
+    display: inline-block;
+    top: 50%;
+    right: 40%;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 2.5rem;
+    color: #fff;
+    background-color: #745b37;
+    cursor: pointer;
+}
+
+
+.btn-2:hover {
+    color: #fff;
+    background-color: rgba(116, 91, 55, 0.8);
+}
+
+/* Buton responsive */
+
+@media (min-width:320px) {
+    .btn-2 {
+        font-size: 3rem;
+        margin-top: 4.2rem;
+    }
+}
+
+@media (min-width:576px) {
+    .btn-2 {
+        font-size: 3.2rem;
+        margin-top: 4.2rem;
+    }
+}
+
+@media (min-width:768px) {
+    .btn-2 {
+        font-size: 3.3rem;
+        margin-top: 4.2rem;
+    }
+}
+
+@media (min-width:992px) {
+    .btn-2 {
+        font-size: 3.4rem;
+        margin-top: 4.2rem;
+    }
+}
+
+@media (min-width:1200px) {
+    .btn-2 {
+        font-size: 3.5rem;
+        margin-top: 4.2rem;
+    }
+}
+
+@media (min-width:1400px) {
+    .btn-2 {
+        font-size: 3.6rem;
+        margin-top: 3.8rem;
+    }
+}
+
+@media (min-height:1300px) {
+    .btn-2 {
+        font-size: 3.7rem;
+        margin-top: 4.2rem;
+    }
+}
+
+/* Buton responsive bitiş*/
+
+/* Section home */
+
+
+
+
+/* Section-a başlangıç*/
+
+
+#section-a {
+    background: transparent;
+    width: 100%;
+    height: 400px;
+
+}
+
+.home .ana-text-2 {
+    position: absolute;
+    display: flex;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+@media (max-width:320px) {
+    .content h2 {
+        padding-top: 0rem;
+        margin-top: 0rem;
+        color: #ffffff;
+        font-size: 4rem;
+    }
+
+    .content hr {
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        width: 200px;
+        height: 1px;
+        color: #f7f7f7;
+    }
+}
+
+
+@media (min-width:320px) {
+    .content h2 {
+        padding-top: 0rem;
+        margin-top: 0rem;
+        color: #ffffff;
+        font-size: 5rem;
+    }
+
+    .content hr {
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        width: 200px;
+        height: 1px;
+        color: #f7f7f7;
+    }
+}
+
+@media (min-width:768px) {
+    .content h2 {
+        padding-top: 0rem;
+        margin-top: 0rem;
+        color: #ffffff;
+        font-size: 6.5rem;
+    }
+
+    .content hr {
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        width: 370px;
+        height: 1px;
+        color: #f7f7f7;
+    }
+}
+
+
+@media (min-width:2000px) {
+    .content h2 {
+        padding-top: 0rem;
+        margin-top: 0rem;
+        color: #ffffff;
+        font-size: 7rem;
+    }
+
+    .content hr {
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        width: 950px;
+        height: 1px;
+        color: #f7f7f7;
+    }
+}
+
+
+@media (min-width:2560px) {
+    .content h2 {
+        padding-top: 0rem;
+        margin-top: 0rem;
+        color: #ffffff;
+        font-size: 7rem;
+    }
+
+    .content hr {
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        width: 1050px;
+        height: 1px;
+        color: #f7f7f7;
+    }
+}
+
+
+
+.hakkimizda-text {
+    text-align: left;
+    font-size: 2.5rem;
+    color: #ffff;
+}
+
+.hakkimizda-text .left {
+    float: none;
+    padding-right: 5px;
+    padding-left: 25px;
+    max-width: 200x;
+
+}
+
+.hakkimizda-text .right {
+    float: none;
+    padding-left: 25px;
+    padding-right: 5px;
+}
+
+
+
+@media (min-width:992px) {
+    .hakkimizda-text .left {
+        float: left;
+        width: 50%;
+        padding-right: 10px;
+        padding-left: 210px;
+        font-size: 3rem;
+    }
+
+    .hakkimizda-text .right {
+        float: right;
+        width: 50%;
+        padding-right: 210px;
+        padding-left: 10px;
+        font-size: 3rem;
+    }
+}
+
+/*Section-a bitiş*/
+
+
+
+
+/*Section portfolyo ayarlar başlangıç*/
+
+
+/* 
+.portfolyo {
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 50;
+
+}
+
+.portfolyo-item {
+    padding: 5px 5px 5px 5px;
+    width: 25%;
+    height: 300%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.portfolyo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+ */
+
+
+
+/* 
+.gecis {
+    width: 25%;
+    height: 25%;
+    background-color: #5b2a02;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    opacity: 0.8;
+    color: #fff;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+
+.gecis h3 {
+    font-size: 10rem;
+    position: absolute;
+
+}
+
+.gecis h4 {
+    font-size: 3rem;
+    position: absolute;
+
+} */
+
+.col-md-3 h3,
+.col-sm-6 h3,
+.my-3 .gecis2 h3 {
+    font-size: 4rem;
+    color: #000;
+
+}
+
+.col-md-3 h4,
+.col-sm-6 h4,
+.my-3 .gecis2 h4 {
+    font-size: 2.5rem;
+    color: #000;
+}
+
+
+i {
+    margin-top: 10px;
+    font-size: 4rem;
+}
+
+
+
+/* KAHVE İSİMLERİ VE FİYAT RESPONSİVE BAŞLANGIÇ */
+
+@media (min-width:320px) {
+    .gecis h3 {
+        top: 45rem;
+        font-size: 3rem;
+    }
+
+    .gecis h4 {
+        top: 49rem;
+        font-size: 2.2rem;
+    }
+}
+
+
+
+
+@media (min-width:360px) {
+    .gecis h3 {
+        top: 50rem;
+        font-size: 3rem;
+    }
+
+    .gecis h4 {
+        top: 54rem;
+        font-size: 2.2rem;
+    }
+}
+
+@media (min-width:375px) {
+    .gecis h3 {
+        top: 52rem;
+        font-size: 3rem;
+    }
+
+    .gecis h4 {
+        top: 56rem;
+        font-size: 2.2rem;
+    }
+}
+
+@media (min-width:390px) {
+    .gecis h3 {
+        top: 54rem;
+        font-size: 3rem;
+    }
+
+    .gecis h4 {
+        top: 58rem;
+        font-size: 2.2rem;
+    }
+}
+
+@media (min-width:412px) {
+    .gecis h3 {
+        top: 57rem;
+        font-size: 3.5rem;
+    }
+
+    .gecis h4 {
+        top: 61rem;
+        font-size: 2.5rem;
+    }
+}
+
+
+@media (min-width:414px) {
+    .gecis h3 {
+        top: 56rem;
+        font-size: 3.5rem;
+    }
+
+    .gecis h4 {
+        top: 60rem;
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width:425px) {
+    .gecis h3 {
+        top: 58rem;
+        font-size: 3.5rem;
+    }
+
+    .gecis h4 {
+        top: 62rem;
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width:460px) {
+    .gecis h3 {
+        top: 62rem;
+        font-size: 3.5rem;
+    }
+
+    .gecis h4 {
+        top: 67rem;
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width:485px) {
+    .gecis h3 {
+        top: 66rem;
+        font-size: 3rem;
+    }
+
+    .gecis h4 {
+        top: 70rem;
+        font-size: 2.2rem;
+    }
+}
+
+@media (min-width:576px) {
+    .gecis h3 {
+        top: 76rem;
+    }
+
+    .gecis h4 {
+        top: 81rem;
+    }
+}
+
+@media (min-width:768px) {
+    .gecis h3 {
+        top: 53rem;
+    }
+
+    .gecis h4 {
+        top: 58rem;
+    }
+}
+
+
+@media (min-width:820px) {
+    .gecis h3 {
+        top: 55rem;
+    }
+
+    .gecis h4 {
+        top: 59rem;
+    }
+}
+
+@media (min-width:992px) {
+    .gecis h3 {
+        top: 36rem;
+    }
+
+    .gecis h4 {
+        top: 41rem;
+    }
+}
+
+@media (min-width:1024px) {
+    .gecis h3 {
+        top: 37rem;
+    }
+
+    .gecis h4 {
+        top: 41rem;
+    }
+}
+
+@media (min-width:1200px) {
+    .gecis h3 {
+        top: 43rem;
+    }
+
+    .gecis h4 {
+        top: 48rem;
+    }
+}
+
+@media (min-width:1400px) {
+    .gecis h3 {
+        top: 50rem;
+        font-size: 5rem;
+    }
+
+    .gecis h4 {
+        top: 55.8rem;
+        font-size: 3rem;
+        margin: 1.2rem;
+    }
+
+
+}
+
+@media (min-width:1441px) {
+    .gecis h3 {
+        top: 85rem;
+    }
+
+    .gecis h4 {
+        top: 91rem;
+        margin: 1.5rem;
+    }
+
+
+}
+
+
+
+/* KAHVE İSİMLERİ VE FİYAT RESPONSİVE BİTİŞ */
+
+
+
+.portfolyo-item:hover .gecis {
+    top: 0;
+}
+
+.portfolyo-item:hover img {
+    transform: scale(1.1);
+}
+
+
+@media (min-width:576px) {
+    .portfolyo {
+        margin-top: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/* PORTFOLYO RESPONSİVE */
+
+@media only screen and (max-width:990px) {
+    .portfolyo .portfolyo-item {
+        flex-basis: 50%;
+    }
+}
+
+@media only screen and (max-width:580px) {
+    .portfolyo .portfolyo-item {
+        flex-basis: 100%;
+    }
+}
+
+
+.content-2 h2 {
+    margin-top: 0rem;
+    padding-top: 20rem;
+    color: #6d4c0e;
+    font-size: 5rem;
+}
+
+@media (min-width:576px) {
+    .content-2 h2 {
+        font-size: 7rem;
+    }
+}
+
+
+.content-2 hr {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 95%;
+    height: 1px;
+    color: #6d4c0e;
+}
+
+
+/*Section portfolyo ayarlar bitiş*/
+
+
+
+
+/* İLETİŞİM BAŞLANGIÇ */
+
+
+.iletisim-background {
+    min-height: 104vh;
+    background: url(images/coffee2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+
+@media (min-width:320px) {
+    .ana-kapsama {
+        width: 300px;
+        height: 500px;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -15px;
+    }
+
+    .iletisim-baslik h3 {
+        color: #fff;
+        font-size: 3.5rem;
+        padding: 5rem;
+    }
+
+    .form-elemanlar label {
+        color: #fff;
+        padding: 2.5rem;
+        display: block;
+    }
+
+    input[type="text"] {
+        color: #fff;
+        background-color: transparent;
+        padding: 2rem;
+        width: 296px;
+    }
+
+    #iletisimForm hr {
+        color: #ffffff;
+        width: 300px;
+        height: 1px;
+    }
+
+    input[type="email"] {
+        color: #fff;
+        background-color: transparent;
+        padding: 2rem;
+        width: 296px;
+    }
+
+    textarea {
+        color: #fff;
+        background-color: transparent;
+        padding: 2rem;
+        resize: none;
+        width: 296px;
+    }
+
+    .form-elemanlar button {
+        display: block;
+        padding: 1.7rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 3.5rem;
+        width: 150px;
+        font-size: 2.5rem;
+        background-color: rgb(38, 101, 197);
+        color: #eaeaea;
+    }
+}
+
+
+@media (min-width:375px) {
+    .ana-kapsama {
+        width: 300px;
+        height: 500px;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -15px;
+    }
+
+    .iletisim-baslik h3 {
+        color: #fff;
+        font-size: 3.5rem;
+        padding: 5rem;
+    }
+
+    .form-elemanlar label {
+        color: #fff;
+        padding: 2.5rem;
+        display: block;
+    }
+
+    input[type="text"] {
+        color: #fff;
+        background-color: transparent;
+        padding: 2rem;
+        width: 296px;
+    }
+
+    #iletisimForm hr {
+        color: #ffffff;
+        width: 300px;
+        height: 1px;
+    }
+
+    input[type="email"] {
+        color: #fff;
+        background-color: transparent;
+        padding: 2rem;
+        width: 296px;
+    }
+
+    textarea {
+        color: #fff;
+        background-color: transparent;
+        padding: 2rem;
+        resize: none;
+        width: 296px;
+    }
+
+    .form-elemanlar button {
+        display: block;
+        padding: 1.7rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 3.5rem;
+        width: 150px;
+        font-size: 2.5rem;
+        background-color: rgb(38, 101, 197);
+        color: #eaeaea;
+    }
+}
+
+
+@media (min-width:425px) {
+    .ana-kapsama {
+        width: 350px;
+        height: 650px;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -15px;
+    }
+
+    .iletisim-baslik h3 {
+        color: #fff;
+        font-size: 4.5rem;
+        padding: 8rem;
+    }
+
+    .form-elemanlar label {
+        color: #fff;
+        padding: 2.5rem;
+        display: block;
+
+    }
+
+    input[type="text"] {
+        color: #fff;
+        background-color: transparent;
+        padding: 3rem;
+        font-size: 2.6rem;
+        width: 346px;
+    }
+
+    #iletisimForm hr {
+        color: #ffffff;
+        width: 350px;
+        height: 1px;
+    }
+
+    input[type="email"] {
+        color: #fff;
+        background-color: transparent;
+        padding: 3rem;
+        font-size: 2.6rem;
+        width: 346px;
+    }
+
+    textarea {
+        color: #fff;
+        background-color: transparent;
+        padding: 2rem;
+        font-size: 2.6rem;
+        resize: none;
+        width: 335px;
+    }
+
+    .form-elemanlar button {
+        display: block;
+        padding: 1.7rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 5rem;
+        font-size: 2.8rem;
+        width: 150px;
+        background-color: rgb(38, 101, 197);
+        color: #eaeaea;
+    }
+}
+
+
+
+@media (min-width:576px) {
+    .ana-kapsama {
+        width: 450px;
+        height: 650px;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -15px;
+    }
+
+    .iletisim-baslik h3 {
+        color: #fff;
+        font-size: 5rem;
+        padding: 8rem;
+    }
+
+    .form-elemanlar label {
+        color: #fff;
+        padding: 2.5rem;
+        display: block;
+    }
+
+    input[type="text"] {
+        color: #fff;
+        background-color: transparent;
+        padding: 3rem;
+        font-size: 2.8rem;
+        width: 446px;
+    }
+
+    #iletisimForm hr {
+        color: #ffffff;
+        width: 450px;
+        height: 1px;
+    }
+
+    input[type="email"] {
+        color: #fff;
+        background-color: transparent;
+        padding: 3rem;
+        font-size: 2.8rem;
+        width: 446px;
+    }
+
+    textarea {
+        color: #fff;
+        background-color: transparent;
+        padding: 3rem;
+        resize: none;
+        font-size: 2.8rem;
+        width: 446px;
+    }
+
+    .form-elemanlar button {
+        display: block;
+        padding: 1.7rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 1.8rem;
+        width: 150px;
+        background-color: rgb(38, 101, 197);
+        color: #eaeaea;
+        font-size: 2.8rem;
+    }
+}
+
+
+@media (min-width:768px) {
+    .ana-kapsama {
+        width: 600px;
+        height: 750px;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -15px;
+    }
+
+    .iletisim-baslik h3 {
+        color: #fff;
+        font-size: 5.5rem;
+        padding: 10rem;
+    }
+
+    .form-elemanlar label {
+        color: #fff;
+        padding: 2.5rem;
+        display: block;
+    }
+
+    input[type="text"] {
+        color: #fff;
+        background-color: transparent;
+        padding: 3rem;
+        font-size: 3rem;
+        width: 595px;
+    }
+
+    #iletisimForm hr {
+        color: #ffffff;
+        width: 600px;
+        height: 1px;
+    }
+
+    input[type="email"] {
+        color: #fff;
+        background-color: transparent;
+        padding: 3rem;
+        font-size: 3rem;
+        width: 595px;
+    }
+
+    textarea {
+        color: #fff;
+        background-color: transparent;
+        padding: 3rem;
+        resize: none;
+        font-size: 3rem;
+        width: 595px;
+    }
+
+    .form-elemanlar button {
+        display: block;
+        padding: 1.7rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 5.5rem;
+        width: 170px;
+        background-color: rgb(38, 101, 197);
+        color: #eaeaea;
+        font-size: 3.5rem;
+    }
+}
+
+
+
+@media (min-width:1024px) {
+    .ana-kapsama {
+        width: 750px;
+        height: 850px;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -5px;
+    }
+
+    .iletisim-baslik h3 {
+        color: #fff;
+        font-size: 7rem;
+        padding: 12rem;
+    }
+
+    .form-elemanlar label {
+        color: #fff;
+        padding: 2.5rem;
+        display: block;
+    }
+
+    input[type="text"] {
+        color: #fff;
+        background-color: transparent;
+        padding: 3.5rem;
+        font-size: 3.5rem;
+        width: 746px;
+    }
+
+    #iletisimForm hr {
+        color: #ffffff;
+        width: 750px;
+        height: 1px;
+    }
+
+    input[type="email"] {
+        color: #fff;
+        background-color: transparent;
+        padding: 3.5rem;
+        font-size: 3.5rem;
+        width: 746px;
+    }
+
+    textarea {
+        color: #fff;
+        background-color: transparent;
+        padding: 3.5rem;
+        resize: none;
+        font-size: 3.5rem;
+        width: 746px;
+    }
+
+    .form-elemanlar button {
+        display: block;
+        padding: 1.7rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 4.5rem;
+        width: 200px;
+        font-size: 4rem;
+        background-color: rgb(38, 101, 197);
+        color: #eaeaea;
+    }
+}
+
+
+@media (min-width:1440px) {
+    .ana-kapsama {
+        width: 1150px;
+        height: 950px;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 25px;
+    }
+
+
+    .iletisim-baslik h3 {
+        color: #fff;
+        font-size: 7rem;
+        padding: 12rem;
+    }
+
+    .form-elemanlar label {
+        color: #fff;
+        padding: 2.5rem;
+        display: block;
+    }
+
+    input[type="text"] {
+        color: #fff;
+        background-color: transparent;
+        padding: 5rem;
+        width: 1150px;
+        font-size: 3.5rem;
+    }
+
+    #iletisimForm hr {
+        color: #ffffff;
+        width: 1150px;
+        height: 1px;
+    }
+
+    input[type="email"] {
+        color: #fff;
+        background-color: transparent;
+        padding: 5rem;
+        width: 1150px;
+        font-size: 3.5rem;
+    }
+
+    textarea {
+        color: #fff;
+        background-color: transparent;
+        padding: 5rem;
+        resize: none;
+        width: 1150px;
+        font-size: 3.5rem;
+    }
+
+    .form-elemanlar button {
+        display: block;
+        padding: 1.7rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 8rem;
+        width: 230px;
+        background-color: rgb(38, 101, 197);
+        color: #eaeaea;
+        font-size: 4rem;
+    }
+}
+
+
+
+@media (min-width:2300px) {
+    .ana-kapsama {
+        width: 1700px;
+        height: 800px;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 5px;
+    }
+
+    .iletisim-baslik h3 {
+        color: #fff;
+        font-size: 7rem;
+        padding: 10rem;
+    }
+
+    .form-elemanlar label {
+        color: #fff;
+        padding: 4rem;
+        display: block;
+    }
+
+    input[type="text"] {
+        color: #fff;
+        background-color: transparent;
+        padding: 2rem;
+        width: 1700px;
+        font-size: 3.5rem;
+    }
+
+    #iletisimForm hr {
+        color: #ffffff;
+        width: 1700px;
+        height: 1px;
+    }
+
+    input[type="email"] {
+        color: #fff;
+        background-color: transparent;
+        padding: 2rem;
+        width: 1700px;
+        font-size: 3.5rem;
+    }
+
+    textarea {
+        color: #fff;
+        background-color: transparent;
+        padding: 2rem;
+        resize: none;
+        width: 1700px;
+        font-size: 3.5rem;
+    }
+
+    .form-elemanlar button {
+        display: block;
+        padding: 1.7rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 6rem;
+        width: 300px;
+        background-color: rgb(38, 101, 197);
+        color: #eaeaea;
+        font-size: 4rem;
+    }
+}
+
+
+
+
+
+@media (min-width:2560px) {
+    .ana-kapsama {
+        width: 1900px;
+        height: 800px;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10px;
+    }
+
+    .iletisim-baslik h3 {
+        color: #fff;
+        font-size: 7rem;
+        padding: 10rem;
+    }
+
+    .form-elemanlar label {
+        color: #fff;
+        padding: 2.5rem;
+        display: block;
+    }
+
+    input[type="text"] {
+        color: #fff;
+        background-color: transparent;
+        padding: 3rem;
+        width: 1900px;
+        font-size: 3.5rem;
+    }
+
+    #iletisimForm hr {
+        color: #ffffff;
+        width: 1900px;
+        height: 1px;
+    }
+
+    input[type="email"] {
+        color: #fff;
+        background-color: transparent;
+        padding: 3rem;
+        width: 1900px;
+        font-size: 3.5rem;
+    }
+
+    textarea {
+        color: #fff;
+        background-color: transparent;
+        padding: 3rem;
+        resize: none;
+        width: 1900px;
+        font-size: 3.5rem;
+    }
+
+    .form-elemanlar button {
+        display: block;
+        padding: 1.7rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 3.5rem;
+        width: 330px;
+        background-color: rgb(38, 101, 197);
+        color: #eaeaea;
+        font-size: 4rem;
+    }
+}
+
+
+
+/* İLETİŞİM BİTİŞ */
+
+
+
+/* Error text Başlangıç */
+
+.home .error-text {
+    position: absolute;
+    display: flex;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.home .error-text h1 {
+    font-size: 15rem;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+
+
+/* Error text responsive  başlangıç */
+
+@media (min-width:320px) {
+    .home .error-text h1 {
+        font-size: 20rem;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;
+    }
+}
+
+@media (min-width:576px) {
+    .home .error-text h1 {
+        font-size: 21rem;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;
+    }
+}
+
+@media (min-width:768px) {
+    .home .error-text h1 {
+        font-size: 22rem;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;
+    }
+}
+
+@media (min-width:992px) {
+    .home .error-text h1 {
+        font-size: 23rem;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;
+    }
+}
+
+@media (min-width:1200px) {
+    .home .error-text h1 {
+        font-size: 25rem;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;
+    }
+}
+
+
+@media (min-width:1400px) {
+    .home .error-text h1 {
+        font-size: 25rem;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;
+    }
+}
+
+
+/* Error text responsive bitiş */
+/* Error text bitiş */
+
+
+
+
+
+
+
+
+
+
+/* Footer Başlangıç */
+
+.footer {
+    margin-top: 0px;
+    background-color: #000;
+    text-align: center;
+}
+
+.footer h1 {
+    color: #fff;
+    font-size: 3rem;
+    padding-top: 5rem;
+}
+
+.footer .share {
+    padding: 3.5rem 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .share a {
+    width: 6rem;
+    height: 6rem;
+    line-height: 6rem;
+    color: #fff;
+    font-size: 2.5rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    margin: 0.3rem;
+}
+
+.footer .share a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.footer .credit {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 300;
+    padding-top: 0.5rem;
+    padding-bottom: 3rem;
+}
+
+.footer .credit span {
+    color: yellowgreen;
+}
+
+@media (min-width:576px) {
+    .footer .share a {
+        width: 7rem;
+        height: 7rem;
+        line-height: 6.5rem;
+        color: #fff;
+        font-size: 3rem;
+        border: 0.1rem solid rgba(255, 255, 255, 0.4);
+        border-radius: 50%;
+        margin: 0.3rem;
+    }
+
+    .footer .credit {
+        font-size: 2rem;
+        color: #fff;
+        font-weight: 300;
+        padding-top: 0.5rem;
+    }
+
+    .footer h1 {
+        font-size: 4rem;
+    }
+}
+
+
+/* Footer Bitiş */
